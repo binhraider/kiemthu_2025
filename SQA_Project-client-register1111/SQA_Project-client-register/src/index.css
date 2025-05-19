@@ -1,0 +1,154 @@
+:root {
+  --red: #ad171c;
+  --gray: #ccc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.subject-param {
+  cursor: pointer;
+  position: relative;
+}
+
+.subject-param[data-disabled] {
+  cursor: default;
+  background-color: #8a161a;
+  color: #ccc;
+}
+
+.subject-param i.fa {
+  margin-left: 8px;
+}
+
+#header {
+  background-color: var(--red);
+  color: #fff;
+  padding: 16px 60px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+}
+#header .title {
+  /* margin-left: 4px; */
+}
+
+#main {
+  margin-top: 10px;
+  padding: 16px;
+}
+
+#main .title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  background-color: var(--red);
+  font-weight: lighter;
+  padding: 8px 30px;
+  text-transform: uppercase;
+}
+
+.filter-dropdown {
+  width: 100%;
+  max-width: 480px;
+  padding: 8px;
+  margin: 6px 0;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #aaa;
+  color: #333;
+  border-radius: 4px;
+}
+
+.filter-dropdown:disabled {
+  cursor: default;
+}
+
+.data-table-ctn {
+  position: relative;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.data-table thead th {
+  padding: 6px 0;
+}
+
+.data-table tbody td {
+  border: 1px solid var(--gray);
+  padding: 4px;
+}
+
+.data-table tbody td input[type='checkbox'] {
+  --size: 18px;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+}
+
+.data-table tbody td input[type='checkbox']:disabled {
+  cursor: default;
+}
+
+.primary-button {
+  outline: none;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: #fff;
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  cursor: default;
+  color: var(--gray);
+  background-color: #943133;
+}
+
+.description {
+  padding: 6px;
+  background-color: #ecdcdc;
+}
+
+.banner img {
+  max-width: 360px;
+}
+
+.nav-disable {
+  color: rgb(147, 171, 171);
+}
+
+.nav-disable:hover {
+  text-decoration: none !important;
+}
+
+button {
+  padding: 2px 4px;
+}

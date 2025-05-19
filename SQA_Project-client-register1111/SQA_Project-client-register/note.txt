@@ -1,0 +1,8 @@
+Cách chạy:
+
+1. Cài đặt môi trường: Tải Nodejs.
+2. Cài radminvpn
+3. Mở thư mục dự án với vscode hoặc terminal.
+3. Gõ "npm i" để cài đặt các dependencies.
+4. Mở radminvpn
+

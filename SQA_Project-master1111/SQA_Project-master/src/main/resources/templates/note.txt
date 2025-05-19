@@ -1,0 +1,4 @@
+Splash screen: Yes;
+Anti-spam: Yes;
+Authorization: Not yet (gắn token vào request);
+Load balancing: Not yet (dùng jmeter tạo 1000 request cùng lúc);

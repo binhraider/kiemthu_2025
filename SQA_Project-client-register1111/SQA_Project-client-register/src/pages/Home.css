@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family:  sans-serif;
+    font-size: 16px; */
+}
+.html,
+body {
+  width: 100%;
+  height: 100%;
+  /* font-family: Roboto, sans-serif; */
+  /* font-family:  sans-serif;
+    font-size: 16px; */
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #ad171c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-items: left;
+  line-height: 50px;
+}
+ul li {
+  color: aliceblue;
+  padding-left: 30px;
+  font-size: larger;
+}
+li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.icon {
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  height: 160px;
+}
+.banner img {
+  width: 40%;
+  height: 85%;
+  padding-left: 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.content .main {
+  flex: 1;
+  /* height: 600px; */
+  display: flex;
+  position: relative;
+  /* border: 1px solid rgb(147, 171, 171); */
+}
+.content .tit {
+  /* width: 100%;
+  height: 50px;
+  background-color: #ad171c;
+  position: absolute;
+  border-radius: 5px;
+  padding: 14px;
+  color: aliceblue;
+  text-align: left;
+  font-size: large;
+  margin-right: 10px; */
+  width: 99%;
+  background-color: #ad171c;
+  position: absolute;
+  border-radius: 5px;
+  padding: 14px;
+  color: aliceblue;
+  text-align: left;
+  font-size: large;
+  /* margin-right: 20px; */
+}
+
+.main .announce {
+  width: 50%;
+  /* height: 600px; */
+  margin-top: 60px;
+}
+.main .announce img {
+  width: 100%;
+  height: 200px;
+  padding-right: 10px;
+}
+.main .content_announce {
+  width: 100%;
+  border: 1px solid rgb(147, 171, 171);
+  margin-top: 60px;
+  margin-right: 20px;
+}
+.content_announce a {
+  display: block;
+  font-size: larger;
+  text-decoration: none;
+  margin: 10px;
+  color: #000;
+}
+.content_announce a:hover {
+  color: rgb(147, 171, 171);
+}
+.login {
+  min-width: 320px;
+  display: block;
+  /* height: 600px; */
+  justify-content: space;
+  position: relative;
+  background-color: rgb(247, 240, 240);
+}
+.login .title1 {
+  width: 100%;
+  height: 50px;
+  font-size: large;
+  background-color: #ad171c;
+  /* border-top-left-radius: 5px; */
+  /* border-radius: 5px; */
+}
+.login h1 {
+  color: aliceblue;
+  justify-items: center;
+  justify-content: left;
+  padding: 10px;
+  text-align: center;
+}
+
+.login .input_box {
+  width: 100%;
+  height: 200px;
+}
+.input_box label {
+  color: black;
+  font-size: medium;
+  display: block;
+}
+
+.input_box .tx1 {
+  width: 100%;
+  /* height: 40px; */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #ad171c;
+  justify-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  border-bottom: #2c2626;
+  /* margin: 10px 0; */
+  font-size: 16px;
+  text-align: center;
+}
+.input_box button {
+  width: 100%;
+  max-width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  justify-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  border: 1px solid #ad171c;
+}
+.input_box button {
+  background-color: #ad171c;
+  color: aliceblue;
+  font-size: large;
+  text-align: center;
+  /* margin-top: 20px; */
+  cursor: pointer;
+}
+button:hover {
+  background-color: #a04144;
+}
+.input_box .fa-solid {
+  position: absolute;
+  font-size: larger;
+  right: 15px;
+  cursor: pointer;
+  /* top: 50%; */
+}
+.input_box .fa-user,
+.fa-lock {
+  padding-top: 20px;
+  cursor: pointer;
+}
+.input_box .fa-right-to-bracket {
+  padding-top: 30px;
+  color: #fff;
+}
+.input_box .forget_password {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  right: 25px;
+}
+.forget_password a:hover {
+  color: rgb(147, 171, 171);
+}
+
+.footer {
+  display: block;
+  background-color: #b8474a;
+  margin-top: 10px;
+  text-align: right;
+  padding: 20px;
+}
+
+.footer_content p {
+  margin-right: 20px;
+  font-size: large;
+  color: black;
+  font-weight: bolder;
+  padding-top: 5px;
+  margin-left: 1000px;
+  font-size: large;
+  color: black;
+  font-weight: bolder;
+  display: flex;
+}
+#logoutButton {
+  text-decoration: none;
+  margin-top: 4px;
+}
+.logoutHome {
+  padding: 0px 80px;
+  text-align: 'center';
+}
+@media only screen and (min-width: 1000px) {
+  .banner {
+    width: 100%;
+    height: 100px;
+  }
+  .banner img {
+    width: 40%;
+    height: 100%;
+    /* padding: 15px; */
+  }
+}
+@media only screen and (max-width: 786px) {
+  .body,
+  .html {
+    width: 100%;
+    height: 1200px;
+  }
+  .content .main {
+    width: 100%;
+    display: block;
+  }
+  .main .announce img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-right: 0px;
+  }
+  .input_box .tx1 {
+    text-align: left;
+    padding-left: 80px;
+    color: #fff;
+  }
+  #logoutButton {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  .logoutHome {
+    padding-left: 52px;
+    text-align: 'center';
+  }
+  .main .announce {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  .main .content_announce {
+    width: 100%;
+    /* height: 300px; */
+    min-height: 300px;
+    display: block;
+  }
+  .content_announce a {
+    display: block;
+    font-size: medium;
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+    /* margin-top: 20px; */
+  }
+  .banner {
+    display: none;
+  }
+  .banner img {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  body.menu-visible .login {
+    display: block;
+  }
+
+  .footer_content p {
+    margin-left: 0; /* Đặt lại margin-left về 0 */
+    text-align: center; /* Căn giữa văn bản */
+  }
+}
+.function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+.function h1 {
+  padding: 14px;
+  width: 100%;
+  height: 50px;
+  background-color: #ad171c;
+  /* border-radius: 5px; */
+  color: aliceblue;
+  text-align: center;
+  justify-items: center;
+  justify-content: left;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.function a {
+  display: block;
+  font-size: larger;
+  text-decoration: none;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+.function a:hover {
+  color: rgb(147, 171, 171);
+}

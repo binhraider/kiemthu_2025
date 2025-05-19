@@ -1,0 +1,204 @@
+.login1 {
+  width: 25%;
+  justify-content: space;
+  position: relative;
+  background-color: rgb(247, 240, 240);
+  border-radius: 5px;
+}
+.login1 .title11 {
+  padding: 14px;
+  width: 100%;
+  height: 50px;
+  font-size: large;
+  background-color: #ad171c;
+  border-radius: 5px;
+}
+.login1 h1 {
+  /* color: aliceblue;
+    text-align: center;
+    justify-items: center;
+    justify-content: left;
+    padding: 10px;
+    text-align: center; */
+  color: aliceblue;
+  text-align: center;
+  justify-items: center;
+  /* justify-content: left; */
+  padding: 10px;
+  text-align: center;
+}
+.login1 .input_box1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_box1 label {
+  color: black;
+  font-size: medium;
+  display: block;
+}
+.input_box1 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  justify-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  border: 1px solid #ad171c;
+  margin: 10px 0;
+}
+.input_box1 button {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  justify-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  border: 1px solid #ad171c;
+}
+.input_box1 button {
+  background-color: #ad171c;
+  color: aliceblue;
+  font-size: large;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 120px;
+}
+button:hover {
+  background-color: #a04144;
+}
+.input_box1 .fa-solid {
+  position: absolute;
+  font-size: larger;
+  right: 15px;
+  cursor: pointer;
+  /* top: 50%; */
+}
+.input_box1 .fa-user,
+.fa-lock {
+  padding-top: 20px;
+  cursor: pointer;
+}
+.input_box1 .fa-right-to-bracket {
+  padding-top: 30px;
+  color: #fff;
+}
+
+.input_box1 .forget_password {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  right: 25px;
+  margin-top: 60px;
+}
+#loginForm[data-show="true"] {
+  display: block !important;
+}
+#loginForm[data-show="false"] {
+  display: block !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .login1 {
+    width: 25%;
+  }
+  .login1 .input_box1 {
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .body,
+  .html {
+    width: 100%;
+    height: 1200px;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .content .main {
+    width: 100%;
+    display: block;
+  }
+  .main .announce img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .login h1 {
+    text-align: left;
+    padding-left: 60px;
+    cursor: pointer;
+  }
+  #loginForm {
+    background-color: #ad171c;
+  }
+  #loginForm[data-show="true"] {
+    display: block !important;
+  }
+  #loginForm[data-show="false"] {
+    display: none !important;
+  }
+
+  .main .announce {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  .main .content_announce {
+    width: 100%;
+    min-height: 300px;
+    display: block;
+  }
+  .content_announce a {
+    display: block;
+    font-size: medium;
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+  }
+  .login1 {
+    /* display: none; */
+    width: 100%;
+  }
+  .login1 .input_box1 {
+    margin: auto;
+    padding: 0 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input_box1 button {
+    width: 120px;
+    align-items: center;
+  }
+  .banner {
+    display: none;
+  }
+  .banner img {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  body.menu-visible .login {
+    display: block;
+  }
+
+  .footer_content p {
+    margin-left: 0; /* Đặt lại margin-left về 0 */
+    text-align: center; /* Căn giữa văn bản */
+  }
+}
